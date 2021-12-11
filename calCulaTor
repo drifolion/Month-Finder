@@ -1,0 +1,71 @@
+import java.util.*;
+// calculator 
+public class calCulaTor{
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter the value of a:");
+        int a = scan.nextInt();
+        System.out.print("\nEnter the value of b:");
+        int b = scan.nextInt();
+        System.out.println("Select a button:");
+        int button = scan.nextInt();
+
+        int sum = a + b; // ADDITION
+        int sub = a - b; // SUBTRACTION
+        int mul = a * b; // MULTIPLICATION
+        int div = a / b; // DIVISION
+        int rem = a % b; // REMAINDER
+
+        //if else, else if ladder
+        /*
+        if (button == 1){
+            int sum = a + b;
+            System.out.println("Added value is:\t");
+            System.out.println(sum);
+        } else if (button == 2){
+            int sub = a - b;
+            System.out.println("Subtracted value is:\t");
+            System.out.println(sub);
+        } else if (button == 3){
+            int mul = a * b;
+            System.out.println("Multiplied value is:\t");
+            System.out.println(mul);
+        } else if (button == 4){
+            int div = a / b;
+            System.out.println("Divided value is:\t");
+            System.out.println(div);
+        } else if (button == 5){
+            int rem = a % b;
+            System.out.println("Remainder value is:\t");
+            System.out.println(rem);
+        } else {
+            System.out.println("Invalid operation request!");
+        }
+        */
+
+        //Switch case
+        switch(button){
+            case 1 :
+            System.out.println("Addition Value is:\t");
+            System.out.print(sum);
+            break;
+            case 2 :
+            System.out.println("Subtraction Value is:\t");
+            System.out.print(sub);
+            break;
+            case 3 :
+            System.out.println("Multiplication Value is:\t");
+            System.out.print(mul);
+            break;
+            case 4 :
+            System.out.println("Division Value is:\t");
+            System.out.print(div);
+            break;
+            case 5 :
+            System.out.println("Remainder Value is:\t");
+            System.out.print(rem);
+            break;
+            default : System.out.println("Requested operation is INVALID!");
+        }
+    }
+}
